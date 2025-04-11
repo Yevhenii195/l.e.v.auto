@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: lev-auto
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    branch: main
+    autoDeploy: true
